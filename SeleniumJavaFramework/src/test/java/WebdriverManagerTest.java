@@ -37,6 +37,7 @@ public class WebdriverManagerTest {
 		driver.close();
 		driver.quit();
 
+		System.out.println("Completed");
 	}
 
 }
