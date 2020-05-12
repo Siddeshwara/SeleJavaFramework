@@ -20,11 +20,12 @@ public class HeadlessBrowser {
 		
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
-		driver = new ChromeDriver(options);
-	    options.addArguments("--headless", "--disable-gpu", "--window-size=1366,768","--ignore-certificate-errors", "--silent");
-
-		//options.addArguments("window-size=1366,768");
 		
+		options.addArguments("window-size=1366,768");
+	    options.addArguments("headless");
+	    
+	    driver = new ChromeDriver(options);
+	    
 		GoogleSearchPage2 obj = new GoogleSearchPage2(driver);
 		
 		driver.get("https://www.google.de/");
@@ -34,6 +35,7 @@ public class HeadlessBrowser {
 		GoogleSearchPage2.clickSearch();
 		driver.close();
 		
+		System.out.println("Test completed");
 	}
 
 }

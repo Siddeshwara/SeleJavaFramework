@@ -16,7 +16,7 @@ public class GoogleSearchPageTest {
 		GoogleSearchPage2 obj = new GoogleSearchPage2(driver);
 		
 		driver.get("https://www.google.de/");
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 	
 		GoogleSearchPage2.searchTextInTexbox("You must do this");
 		GoogleSearchPage2.clickSearch();

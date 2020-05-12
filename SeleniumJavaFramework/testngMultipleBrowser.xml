@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="4">
+
+	<test name="TestOnchrome">
+		<parameter name="browsername" value="chrome"></parameter>
+		<classes>
+			<class name="testng_multiplebrowser.TestNgMultipleBrowser" />
+		</classes>
+		</test> <!-- Test -->
+		
+			<test name="TestOnFirefox">
+		<parameter name="browsername" value="firefox"></parameter>
+		<classes>
+			<class name="testng_multiplebrowser.TestNgMultipleBrowser" />
+		</classes>
+		</test> <!-- Test -->
+		
+			<test name="TestOnEdge">
+		<parameter name="browsername" value="edge"></parameter>
+		<classes>
+			<class name="testng_multiplebrowser.TestNgMultipleBrowser" />
+		</classes>
+		</test> <!-- Test -->
+		
+			<test name="TestOnIe">
+		<parameter name="browsername" value="ie"></parameter>
+		<classes>
+			<class name="testng_multiplebrowser.TestNgMultipleBrowser" />
+		</classes>
+</test> <!-- Test -->
+
+	
+</suite> <!-- Suite -->
